@@ -300,7 +300,7 @@
 
             <!-- Copyright info -->
             <div class="border-t border-glass-border/30 pt-6 text-center text-xs text-text-muted">
-                <span>&copy; {{ date('Y') }} Natural Science Society (NSS) Nepal. All Rights Reserved.</span>
+                <span>&copy; Natural Science Society (NSS) Nepal. All Rights Reserved.</span>
             </div>
         </div>
     </footer>
