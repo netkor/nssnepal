@@ -212,8 +212,10 @@
                         </div>
                     </div>
                 @empty
-                    <div class="col-span-3 text-center py-12 text-text-secondary">
-                        No projects seeded. Please run the content seeder.
+                    <div class="col-span-3 text-center py-12 text-text-secondary glass rounded-xl border border-glass-border/30">
+                        <i class="fas fa-seedling text-3xl mb-4 text-primary-muted block"></i>
+                        <span class="text-sm font-semibold">Exciting projects are currently in development.</span>
+                        <p class="text-xs text-text-muted mt-2">Check back soon for updates on our latest initiatives!</p>
                     </div>
                 @endforelse
             </div>
