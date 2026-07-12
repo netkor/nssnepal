@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Natural Science Society (NSS) Nepal')</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <!-- Meta tags for SEO -->
     <meta name="description" content="@yield('meta_description', 'Natural Science Society (NSS) Nepal is a non-governmental organization focused on research and conservation of biodiversity, environmental education, and awareness programs.')">
     <meta name="keywords" content="NSS Nepal, Natural Science Society, biodiversity conservation, environmental education, research, Nepal, wildlife conservation, hyena, musk deer, tiger">
@@ -297,11 +299,8 @@
             </div>
 
             <!-- Copyright info -->
-            <div class="border-t border-glass-border/30 pt-6 text-center text-xs text-text-muted flex flex-col md:flex-row justify-between gap-4">
+            <div class="border-t border-glass-border/30 pt-6 text-center text-xs text-text-muted">
                 <span>&copy; {{ date('Y') }} Natural Science Society (NSS) Nepal. All Rights Reserved.</span>
-                <div class="flex justify-center gap-4">
-                    <a href="/admin/login" class="hover:text-secondary"><i class="fas fa-lock text-[10px] mr-1"></i> Admin Portal</a>
-                </div>
             </div>
         </div>
     </footer>
