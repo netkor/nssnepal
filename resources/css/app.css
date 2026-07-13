@@ -492,7 +492,7 @@ h1, h2, h3, h4, h5, h6 {
     inset: 0;
     background: radial-gradient(
         ellipse at center top,
-        rgba(38, 109, 113, 0.15) 0%,
+        color-mix(in srgb, var(--color-primary-accent) 15%, transparent) 0%,
         transparent 70%
     );
 }
@@ -515,7 +515,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-input:focus {
     border-color: var(--color-primary-accent);
-    box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.2);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 20%, transparent);
 }
 
 .form-input::placeholder {
@@ -772,7 +772,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .membership-modal {
-    background: linear-gradient(145deg, rgba(30, 40, 35, 0.98), rgba(18, 24, 20, 0.98));
+    background: linear-gradient(145deg, color-mix(in srgb, var(--color-dark-surface) 98%, transparent), color-mix(in srgb, var(--color-dark-bg) 98%, transparent));
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 1rem;
     padding: 2rem;
@@ -892,15 +892,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-ongoing {
-    background: rgba(64, 145, 108, 0.2);
+    background: color-mix(in srgb, var(--color-primary) 20%, transparent);
     color: var(--color-primary-muted);
-    border: 1px solid rgba(64, 145, 108, 0.3);
+    border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
 }
 
 .badge-completed {
-    background: rgba(212, 168, 83, 0.2);
+    background: color-mix(in srgb, var(--color-accent-gold) 20%, transparent);
     color: var(--color-accent-gold);
-    border: 1px solid rgba(212, 168, 83, 0.3);
+    border: 1px solid color-mix(in srgb, var(--color-accent-gold) 30%, transparent);
 }
 
 /* ============================================
