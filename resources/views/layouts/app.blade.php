@@ -38,14 +38,14 @@
             :root {
                 @if(!empty($siteSettings['theme_primary']))
                     --color-primary: {{ $siteSettings['theme_primary'] }};
-                    --color-primary-light: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 85%, transparent);
-                    --color-primary-accent: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 70%, transparent);
-                    --color-primary-muted: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 55%, transparent);
+                    --color-primary-light: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 90%, transparent);
+                    --color-primary-accent: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 85%, transparent);
+                    --color-primary-muted: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 75%, transparent);
                 @endif
                 @if(!empty($siteSettings['theme_secondary']))
                     --color-secondary: {{ $siteSettings['theme_secondary'] }};
-                    --color-secondary-light: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 85%, transparent);
-                    --color-secondary-pale: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 55%, transparent);
+                    --color-secondary-light: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 90%, transparent);
+                    --color-secondary-pale: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 75%, transparent);
                 @endif
                 @if(!empty($siteSettings['theme_bg']))
                     --color-dark-bg: {{ $siteSettings['theme_bg'] }};
@@ -57,8 +57,8 @@
                 @endif
                 @if(!empty($siteSettings['theme_text']))
                     --color-text-primary: {{ $siteSettings['theme_text'] }};
-                    --color-text-secondary: color-mix(in srgb, {{ $siteSettings['theme_text'] }} 70%, transparent);
-                    --color-text-muted: color-mix(in srgb, {{ $siteSettings['theme_text'] }} 50%, transparent);
+                    --color-text-secondary: color-mix(in srgb, {{ $siteSettings['theme_text'] }} 80%, transparent);
+                    --color-text-muted: color-mix(in srgb, {{ $siteSettings['theme_text'] }} 65%, transparent);
                 @endif
             }
         </style>
