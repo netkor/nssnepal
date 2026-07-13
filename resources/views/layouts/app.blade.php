@@ -38,14 +38,14 @@
             :root {
                 @if(!empty($siteSettings['theme_primary']))
                     --color-primary: {{ $siteSettings['theme_primary'] }};
-                    --color-primary-light: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 80%, white);
-                    --color-primary-accent: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 60%, white);
-                    --color-primary-muted: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 40%, white);
+                    --color-primary-light: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 85%, transparent);
+                    --color-primary-accent: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 70%, transparent);
+                    --color-primary-muted: color-mix(in srgb, {{ $siteSettings['theme_primary'] }} 55%, transparent);
                 @endif
                 @if(!empty($siteSettings['theme_secondary']))
                     --color-secondary: {{ $siteSettings['theme_secondary'] }};
-                    --color-secondary-light: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 80%, white);
-                    --color-secondary-pale: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 40%, white);
+                    --color-secondary-light: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 85%, transparent);
+                    --color-secondary-pale: color-mix(in srgb, {{ $siteSettings['theme_secondary'] }} 55%, transparent);
                 @endif
                 @if(!empty($siteSettings['theme_bg']))
                     --color-dark-bg: {{ $siteSettings['theme_bg'] }};
