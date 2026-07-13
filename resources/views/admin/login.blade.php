@@ -23,7 +23,7 @@
             <a href="/" class="inline-flex items-center gap-3 mb-3">
                 <img src="/images/logo.png" alt="NSS Logo" class="h-12 w-12 rounded-full border border-secondary/30 object-cover">
                 <div class="flex flex-col text-left">
-                    <span class="text-xl font-bold font-heading tracking-wide uppercase text-white leading-none">NSS Nepal</span>
+                    <span class="text-xl font-bold font-heading tracking-wide uppercase text-text-primary leading-none">NSS Nepal</span>
                     <span class="text-[9px] text-text-secondary tracking-widest uppercase">Admin Portal</span>
                 </div>
             </a>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="text-center mt-6">
-            <a href="/" class="text-text-muted hover:text-white text-xs transition duration-300">
+            <a href="/" class="text-text-muted hover:text-text-primary text-xs transition duration-300">
                 <i class="fas fa-arrow-left text-[10px] mr-1"></i> Back to Public Website
             </a>
         </div>

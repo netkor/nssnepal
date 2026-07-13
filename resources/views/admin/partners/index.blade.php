@@ -33,7 +33,7 @@
                                 <span class="text-text-muted text-xs"><i class="fas fa-image text-lg"></i></span>
                             @endif
                         </td>
-                        <td class="py-4 px-4 font-semibold text-white">{{ $partner->name }}</td>
+                        <td class="py-4 px-4 font-semibold text-text-primary">{{ $partner->name }}</td>
                         <td class="py-4 px-4 text-text-secondary font-mono">
                             @if($partner->url)
                                 <a href="{{ $partner->url }}" target="_blank" class="text-secondary hover:underline">{{ $partner->url }}</a>
@@ -49,11 +49,11 @@
                         </td>
                         <td class="py-4 px-4 text-right">
                             <div class="inline-flex gap-3">
-                                <a href="{{ route('admin.partners.edit', $partner->id) }}" class="text-secondary hover:text-white"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="{{ route('admin.partners.edit', $partner->id) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-edit"></i> Edit</a>
                                 <form method="POST" action="{{ route('admin.partners.destroy', $partner->id) }}" onsubmit="return confirm('Are you sure you want to delete this partner?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-accent-coral hover:text-white bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
+                                    <button type="submit" class="text-accent-coral hover:text-text-primary bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
                                 </form>
                             </div>
                         </td>

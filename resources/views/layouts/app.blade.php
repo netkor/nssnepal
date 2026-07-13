@@ -64,7 +64,7 @@
         </style>
     @endif
 </head>
-<body class="bg-dark-bg text-text-primary min-h-screen flex flex-col selection:bg-primary-accent selection:text-white">
+<body class="bg-dark-bg text-text-primary min-h-screen flex flex-col selection:bg-primary-accent selection:text-text-primary">
     
     <!-- Fixed Navbar -->
     <nav class="navbar w-full" id="mainNavbar">
@@ -73,7 +73,7 @@
             <a href="/" class="flex items-center gap-3">
                 <img src="/images/logo.png" alt="NSS Logo" class="h-10 w-10 rounded-full border border-secondary/30 object-cover">
                 <div class="flex flex-col">
-                    <span class="text-lg font-bold font-heading tracking-wide uppercase text-white leading-none">Natural Science Society</span>
+                    <span class="text-lg font-bold font-heading tracking-wide uppercase text-text-primary leading-none">Natural Science Society</span>
                 </div>
             </a>
 
@@ -116,7 +116,7 @@
             </div>
 
             <!-- Hamburger Button (Mobile) -->
-            <button class="lg:hidden text-white focus:outline-none" id="hamburgerBtn" aria-label="Toggle Navigation">
+            <button class="lg:hidden text-text-primary focus:outline-none" id="hamburgerBtn" aria-label="Toggle Navigation">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
@@ -128,9 +128,9 @@
             <div class="flex justify-between items-center mb-8">
                 <div class="flex items-center gap-3">
                     <img src="/images/logo.png" alt="NSS Logo" class="h-10 w-10 rounded-full border border-secondary/30 object-cover">
-                    <span class="text-xl font-bold font-heading uppercase text-white">NSS Nepal</span>
+                    <span class="text-xl font-bold font-heading uppercase text-text-primary">NSS Nepal</span>
                 </div>
-                <button class="text-white text-2xl focus:outline-none" id="closeMenuBtn" aria-label="Close Navigation">
+                <button class="text-text-primary text-2xl focus:outline-none" id="closeMenuBtn" aria-label="Close Navigation">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -200,7 +200,7 @@
                     <div class="flex items-center gap-3">
                         <img src="/images/logo.png" alt="NSS Logo" class="h-10 w-10 rounded-full border border-secondary/30 object-cover">
                         <div class="flex flex-col">
-                            <span class="text-lg font-bold font-heading uppercase text-white leading-none">NSS Nepal</span>
+                            <span class="text-lg font-bold font-heading uppercase text-text-primary leading-none">NSS Nepal</span>
                             <span class="text-[8px] text-text-secondary tracking-wider uppercase">Natural Science Society</span>
                         </div>
                     </div>
@@ -209,32 +209,32 @@
                     </p>
                     <div class="flex flex-wrap gap-2.5 mt-2">
                         @if(!empty($siteSettings['facebook_url']))
-                            <a href="{{ $siteSettings['facebook_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-white flex items-center justify-center transition-all duration-300" title="Facebook">
+                            <a href="{{ $siteSettings['facebook_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-text-primary flex items-center justify-center transition-all duration-300" title="Facebook">
                                 <i class="fab fa-facebook-f text-sm"></i>
                             </a>
                         @endif
                         @if(!empty($siteSettings['twitter_url']))
-                            <a href="{{ $siteSettings['twitter_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-white flex items-center justify-center transition-all duration-300" title="Twitter / X">
+                            <a href="{{ $siteSettings['twitter_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-text-primary flex items-center justify-center transition-all duration-300" title="Twitter / X">
                                 <i class="fab fa-x-twitter text-sm"></i>
                             </a>
                         @endif
                         @if(!empty($siteSettings['instagram_url']))
-                            <a href="{{ $siteSettings['instagram_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-white flex items-center justify-center transition-all duration-300" title="Instagram">
+                            <a href="{{ $siteSettings['instagram_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-text-primary flex items-center justify-center transition-all duration-300" title="Instagram">
                                 <i class="fab fa-instagram text-sm"></i>
                             </a>
                         @endif
                         @if(!empty($siteSettings['linkedin_url']))
-                            <a href="{{ $siteSettings['linkedin_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-white flex items-center justify-center transition-all duration-300" title="LinkedIn">
+                            <a href="{{ $siteSettings['linkedin_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-text-primary flex items-center justify-center transition-all duration-300" title="LinkedIn">
                                 <i class="fab fa-linkedin-in text-sm"></i>
                             </a>
                         @endif
                         @if(!empty($siteSettings['youtube_url']))
-                            <a href="{{ $siteSettings['youtube_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-white flex items-center justify-center transition-all duration-300" title="YouTube">
+                            <a href="{{ $siteSettings['youtube_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-text-primary flex items-center justify-center transition-all duration-300" title="YouTube">
                                 <i class="fab fa-youtube text-sm"></i>
                             </a>
                         @endif
                         @if(!empty($siteSettings['researchgate_url']))
-                            <a href="{{ $siteSettings['researchgate_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-white flex items-center justify-center transition-all duration-300" title="ResearchGate">
+                            <a href="{{ $siteSettings['researchgate_url'] }}" target="_blank" class="w-8 h-8 rounded-full bg-dark-surface-elevated hover:bg-primary-accent hover:text-text-primary flex items-center justify-center transition-all duration-300" title="ResearchGate">
                                 <i class="fab fa-researchgate text-sm"></i>
                             </a>
                         @endif
@@ -243,7 +243,7 @@
 
                 <!-- Quick Links Column -->
                 <div class="flex flex-col gap-4">
-                    <h4 class="text-white text-md font-heading font-semibold uppercase tracking-wider">Quick Links</h4>
+                    <h4 class="text-text-primary text-md font-heading font-semibold uppercase tracking-wider">Quick Links</h4>
                     <div class="flex flex-col gap-2.5 text-sm">
                         <a href="/about-us" class="hover:translate-x-1 transition-all"><i class="fas fa-angle-right text-xs mr-2 text-primary-accent"></i> About Us</a>
                         <a href="/teams" class="hover:translate-x-1 transition-all"><i class="fas fa-angle-right text-xs mr-2 text-primary-accent"></i> Executive Board & Members</a>
@@ -255,7 +255,7 @@
 
                 <!-- Support & Partners Column -->
                 <div class="flex flex-col gap-4">
-                    <h4 class="text-white text-md font-heading font-semibold uppercase tracking-wider">Downloads & Resources</h4>
+                    <h4 class="text-text-primary text-md font-heading font-semibold uppercase tracking-wider">Downloads & Resources</h4>
                     <div class="flex flex-col gap-2.5 text-sm">
                         <a href="/downloads/publications" class="hover:translate-x-1 transition-all"><i class="fas fa-angle-right text-xs mr-2 text-primary-accent"></i> Scientific Publications</a>
                         <a href="/downloads/reports" class="hover:translate-x-1 transition-all"><i class="fas fa-angle-right text-xs mr-2 text-primary-accent"></i> Annual Reports</a>
@@ -266,7 +266,7 @@
 
                 <!-- Contact Info Column -->
                 <div class="flex flex-col gap-4">
-                    <h4 class="text-white text-md font-heading font-semibold uppercase tracking-wider">Contact Info</h4>
+                    <h4 class="text-text-primary text-md font-heading font-semibold uppercase tracking-wider">Contact Info</h4>
                     <div class="flex flex-col gap-3 text-sm text-text-secondary">
                         <div class="flex items-start gap-3">
                             <i class="fas fa-map-marker-alt text-primary-muted mt-1"></i>
@@ -275,11 +275,11 @@
                         <div class="flex items-start gap-3">
                             <i class="fas fa-envelope text-primary-muted mt-1"></i>
                             <span class="flex flex-col">
-                                <a href="mailto:{{ $siteSettings['contact_email'] ?? 'info@nssnepal.org.np' }}" class="hover:text-white transition">
+                                <a href="mailto:{{ $siteSettings['contact_email'] ?? 'info@nssnepal.org.np' }}" class="hover:text-text-primary transition">
                                     {{ $siteSettings['contact_email'] ?? 'info@nssnepal.org.np' }}
                                 </a>
                                 @if(isset($siteSettings['contact_email_alt']))
-                                    <a href="mailto:{{ $siteSettings['contact_email_alt'] }}" class="hover:text-white transition mt-1">
+                                    <a href="mailto:{{ $siteSettings['contact_email_alt'] }}" class="hover:text-text-primary transition mt-1">
                                         {{ $siteSettings['contact_email_alt'] }}
                                     </a>
                                 @endif
@@ -288,7 +288,7 @@
                         <div class="flex items-start gap-3">
                             <i class="fas fa-phone text-primary-muted mt-1"></i>
                             <span>
-                                <a href="tel:{{ str_replace([' ', '-'], '', $siteSettings['contact_phone'] ?? '+977-9849987348') }}" class="hover:text-white transition">
+                                <a href="tel:{{ str_replace([' ', '-'], '', $siteSettings['contact_phone'] ?? '+977-9849987348') }}" class="hover:text-text-primary transition">
                                     {{ $siteSettings['contact_phone'] ?? '+977-9849987348' }}
                                 </a>
                             </span>

@@ -20,7 +20,7 @@
             <tbody>
                 @forelse($messages as $msg)
                     <tr class="border-b border-glass-border/10 hover:bg-glass-light/5 {{ !$msg->is_read ? 'bg-glass-light/10 font-bold' : '' }}">
-                        <td class="py-4 px-4 text-white">
+                        <td class="py-4 px-4 text-text-primary">
                             @if(!$msg->is_read)
                                 <span class="w-2.5 h-2.5 rounded-full bg-accent-coral inline-block mr-2"></span>
                             @endif
@@ -31,11 +31,11 @@
                         <td class="py-4 px-4 text-text-muted">{{ $msg->created_at->format('M d, Y H:i') }}</td>
                         <td class="py-4 px-4 text-right">
                             <div class="inline-flex gap-3">
-                                <a href="{{ route('admin.messages.show', $msg->id) }}" class="text-secondary hover:text-white"><i class="fas fa-envelope-open"></i> Read</a>
+                                <a href="{{ route('admin.messages.show', $msg->id) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-envelope-open"></i> Read</a>
                                 <form method="POST" action="{{ route('admin.messages.destroy', $msg->id) }}" onsubmit="return confirm('Are you sure you want to delete this message?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-accent-coral hover:text-white bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
+                                    <button type="submit" class="text-accent-coral hover:text-text-primary bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
                                 </form>
                             </div>
                         </td>

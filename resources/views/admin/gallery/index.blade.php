@@ -34,7 +34,7 @@
                                 @endif
                             </div>
                         </td>
-                        <td class="py-3 px-4 font-semibold text-white">
+                        <td class="py-3 px-4 font-semibold text-text-primary">
                             <a href="{{ route('admin.gallery-albums.show', $album->slug) }}" class="text-secondary hover:underline">{{ $album->title }}</a>
                         </td>
                         <td class="py-3 px-4 text-text-secondary font-mono">{{ $album->images->count() }}</td>
@@ -45,12 +45,12 @@
                         </td>
                         <td class="py-3 px-4 text-right">
                             <div class="inline-flex gap-3">
-                                <a href="{{ route('admin.gallery-albums.show', $album->slug) }}" class="text-secondary hover:text-white"><i class="fas fa-images"></i> Manage Photos</a>
-                                <a href="{{ route('admin.gallery-albums.edit', $album->slug) }}" class="text-secondary hover:text-white"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="{{ route('admin.gallery-albums.show', $album->slug) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-images"></i> Manage Photos</a>
+                                <a href="{{ route('admin.gallery-albums.edit', $album->slug) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-edit"></i> Edit</a>
                                 <form method="POST" action="{{ route('admin.gallery-albums.destroy', $album->slug) }}" onsubmit="return confirm('Are you sure you want to delete this album?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-accent-coral hover:text-white bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
+                                    <button type="submit" class="text-accent-coral hover:text-text-primary bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
                                 </form>
                             </div>
                         </td>

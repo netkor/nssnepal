@@ -6,10 +6,10 @@
     <!-- Banner Page Header -->
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10 text-left max-w-5xl">
-            <a href="/gallery" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-2 mb-6 transition">
+            <a href="/gallery" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-2 mb-6 transition">
                 <i class="fas fa-arrow-left"></i> Back to Albums
             </a>
-            <h1 class="text-3xl md:text-5xl font-heading font-extrabold text-white mb-2 leading-tight">
+            <h1 class="text-3xl md:text-5xl font-heading font-extrabold text-text-primary mb-2 leading-tight">
                 {{ $album->title }}
             </h1>
             @if($album->description)
@@ -31,7 +31,7 @@
                         <img src="{{ $image->image_path }}" alt="{{ $image->caption ?? 'Gallery Image' }}" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
                             @if($image->caption)
-                                <p class="text-white text-xs font-medium leading-normal mb-1">{{ $image->caption }}</p>
+                                <p class="text-text-primary text-xs font-medium leading-normal mb-1">{{ $image->caption }}</p>
                             @endif
                             <span class="text-secondary text-[10px]"><i class="fas fa-search-plus"></i> Zoom Image</span>
                         </div>

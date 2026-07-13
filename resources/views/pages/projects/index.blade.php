@@ -7,7 +7,7 @@
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-2 block">Our Initiatives</span>
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-white">Conservation Projects</h1>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-text-primary">Conservation Projects</h1>
             <div class="section-divider mx-auto"></div>
         </div>
     </header>
@@ -20,13 +20,13 @@
             <div class="flex flex-col lg:flex-row justify-between items-center mb-16 animate-on-scroll gap-6">
                 <!-- Filters tab -->
                 <div class="glass p-1.5 rounded-xl flex gap-2 overflow-x-auto w-full lg:w-auto pb-1">
-                    <a href="{{ route('projects.index', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ is_null($status) ? 'bg-primary text-white shadow' : 'text-text-secondary hover:text-white' }}">
+                    <a href="{{ route('projects.index', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ is_null($status) ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         All Projects
                     </a>
-                    <a href="{{ route('projects.index', ['status' => 'ongoing', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'ongoing' ? 'bg-primary text-white shadow' : 'text-text-secondary hover:text-white' }}">
+                    <a href="{{ route('projects.index', ['status' => 'ongoing', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'ongoing' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Ongoing
                     </a>
-                    <a href="{{ route('projects.index', ['status' => 'completed', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'completed' ? 'bg-primary text-white shadow' : 'text-text-secondary hover:text-white' }}">
+                    <a href="{{ route('projects.index', ['status' => 'completed', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'completed' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Completed
                     </a>
                 </div>
@@ -36,7 +36,7 @@
                     @if(request('status'))
                         <input type="hidden" name="status" value="{{ request('status') }}">
                     @endif
-                    <input type="text" name="search" placeholder="Search projects..." value="{{ request('search') }}" class="w-full lg:w-80 bg-glass-light/10 border border-glass-border/30 rounded-xl py-3 px-5 text-white focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition placeholder-text-muted">
+                    <input type="text" name="search" placeholder="Search projects..." value="{{ request('search') }}" class="w-full lg:w-80 bg-glass-light/10 border border-glass-border/30 rounded-xl py-3 px-5 text-text-primary focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition placeholder-text-muted">
                     <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 text-text-muted hover:text-secondary transition">
                         <i class="fas fa-search"></i>
                     </button>
@@ -71,13 +71,13 @@
                             </div>
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold font-heading text-white mb-4 hover:text-secondary transition">
+                            <h3 class="text-2xl font-bold font-heading text-text-primary mb-4 hover:text-secondary transition">
                                 <a href="/projects/{{ $project->slug }}">{{ $project->title }}</a>
                             </h3>
                             <p class="text-text-secondary text-sm leading-relaxed mb-6 flex-grow">
                                 {{ $project->description }}
                             </p>
-                            <a href="/projects/{{ $project->slug }}" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-1.5 mt-auto transition">
+                            <a href="/projects/{{ $project->slug }}" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-1.5 mt-auto transition">
                                 View Full Project Details <i class="fas fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>

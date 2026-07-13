@@ -7,7 +7,7 @@
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-2 block">Grow With Us</span>
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-white">Opportunities</h1>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-text-primary">Opportunities</h1>
             <div class="section-divider mx-auto"></div>
         </div>
     </header>
@@ -23,7 +23,7 @@
                         <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-primary-light to-primary-accent"></div>
                         
                         <div class="flex items-start md:items-center justify-between gap-4 flex-col md:flex-row">
-                            <h2 class="text-2xl font-bold font-heading text-white">
+                            <h2 class="text-2xl font-bold font-heading text-text-primary">
                                 {{ $opp->title }}
                             </h2>
                             <span class="badge badge-ongoing shrink-0">

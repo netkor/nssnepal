@@ -54,7 +54,7 @@
         </style>
     @endif
 </head>
-<body class="bg-dark-bg text-text-primary min-h-screen flex selection:bg-primary-accent selection:text-white">
+<body class="bg-dark-bg text-text-primary min-h-screen flex selection:bg-primary-accent selection:text-text-primary">
 
     <!-- Sidebar -->
     <aside class="admin-sidebar shrink-0 hidden md:flex flex-col">
@@ -62,7 +62,7 @@
             <a href="/" class="flex items-center gap-3 p-0 hover:bg-transparent hover:border-0">
                 <img src="/images/logo.png" alt="NSS Logo" class="h-9 w-9 rounded-full object-cover border border-secondary/30">
                 <div class="flex flex-col">
-                    <span class="text-sm font-bold uppercase text-white leading-none">NSS Admin</span>
+                    <span class="text-sm font-bold uppercase text-text-primary leading-none">NSS Admin</span>
                     <span class="text-[9px] text-text-secondary tracking-widest">PUBLIC SITE</span>
                 </div>
             </a>
@@ -104,7 +104,7 @@
                     $unreadCount = \App\Models\ContactMessage::unread()->count();
                 @endphp
                 @if($unreadCount > 0)
-                    <span class="bg-accent-coral text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{{ $unreadCount }}</span>
+                    <span class="bg-accent-coral text-text-primary text-[10px] font-bold px-2 py-0.5 rounded-full">{{ $unreadCount }}</span>
                 @endif
             </a>
             <a href="/admin/settings" class="{{ Request::is('admin/settings*') ? 'active' : '' }}">
@@ -128,10 +128,10 @@
         <header class="h-16 border-b border-glass-border/35 flex items-center justify-between px-6 md:px-8">
             <div class="flex items-center gap-4">
                 <!-- Hamburger for mobile -->
-                <button class="md:hidden text-white text-xl focus:outline-none" id="adminMobileBtn">
+                <button class="md:hidden text-text-primary text-xl focus:outline-none" id="adminMobileBtn">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h2 class="text-lg font-bold font-heading text-white">@yield('page_title', 'Dashboard')</h2>
+                <h2 class="text-lg font-bold font-heading text-text-primary">@yield('page_title', 'Dashboard')</h2>
             </div>
             
             <div class="flex items-center gap-4">
@@ -179,9 +179,9 @@
             <div class="flex justify-between items-center mb-8">
                 <div class="flex items-center gap-3">
                     <img src="/images/logo.png" alt="NSS Logo" class="h-8 w-8 rounded-full border border-secondary/30 object-cover">
-                    <span class="text-lg font-bold font-heading uppercase text-white">NSS Admin</span>
+                    <span class="text-lg font-bold font-heading uppercase text-text-primary">NSS Admin</span>
                 </div>
-                <button class="text-white text-2xl focus:outline-none" id="closeAdminMenuBtn">
+                <button class="text-text-primary text-2xl focus:outline-none" id="closeAdminMenuBtn">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -219,7 +219,7 @@
                         <i class="fas fa-envelope w-5"></i> Messages
                     </span>
                     @if($unreadCount > 0)
-                        <span class="bg-accent-coral text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{{ $unreadCount }}</span>
+                        <span class="bg-accent-coral text-text-primary text-[10px] font-bold px-2 py-0.5 rounded-full">{{ $unreadCount }}</span>
                     @endif
                 </a>
                 <a href="/admin/settings" class="py-2 flex items-center gap-3">
@@ -230,7 +230,7 @@
             <div class="mt-auto">
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <button type="submit" class="w-full text-center justify-center py-3 bg-accent-coral/20 border border-accent-coral/30 hover:bg-accent-coral text-white rounded-lg flex items-center gap-2">
+                    <button type="submit" class="w-full text-center justify-center py-3 bg-accent-coral/20 border border-accent-coral/30 hover:bg-accent-coral text-text-primary rounded-lg flex items-center gap-2">
                         <i class="fas fa-sign-out-alt"></i> Log Out
                     </button>
                 </form>

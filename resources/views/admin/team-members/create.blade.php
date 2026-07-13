@@ -5,7 +5,7 @@
 
 @section('content')
     <div class="mb-6">
-        <a href="{{ route('admin.team-members.index') }}" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-2"><i class="fas fa-arrow-left"></i> Back to Team</a>
+        <a href="{{ route('admin.team-members.index') }}" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-2"><i class="fas fa-arrow-left"></i> Back to Team</a>
     </div>
 
     <div class="admin-card max-w-2xl">
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <h3 class="text-white font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2">Contact & Academic Profiles</h3>
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2">Contact & Academic Profiles</h3>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>

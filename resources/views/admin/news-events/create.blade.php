@@ -5,7 +5,7 @@
 
 @section('content')
     <div class="mb-6">
-        <a href="{{ route('admin.news-events.index') }}" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-2"><i class="fas fa-arrow-left"></i> Back to News & Events</a>
+        <a href="{{ route('admin.news-events.index') }}" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-2"><i class="fas fa-arrow-left"></i> Back to News & Events</a>
     </div>
 
     <div class="admin-card max-w-4xl">

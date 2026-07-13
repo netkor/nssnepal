@@ -30,7 +30,7 @@
                                 <img src="{{ $slide->image }}" alt="Preview" class="w-full h-full object-cover">
                             </div>
                         </td>
-                        <td class="py-3 px-4 font-semibold text-white">
+                        <td class="py-3 px-4 font-semibold text-text-primary">
                             {{ $slide->title }}
                             <span class="block text-xs font-normal text-text-secondary mt-0.5 truncate max-w-sm">{{ $slide->subtitle }}</span>
                         </td>
@@ -42,11 +42,11 @@
                         </td>
                         <td class="py-3 px-4 text-right">
                             <div class="inline-flex gap-3">
-                                <a href="{{ route('admin.sliders.edit', $slide->id) }}" class="text-secondary hover:text-white"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="{{ route('admin.sliders.edit', $slide->id) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-edit"></i> Edit</a>
                                 <form method="POST" action="{{ route('admin.sliders.destroy', $slide->id) }}" onsubmit="return confirm('Are you sure you want to delete this slide?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-accent-coral hover:text-white bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
+                                    <button type="submit" class="text-accent-coral hover:text-text-primary bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
                                 </form>
                             </div>
                         </td>

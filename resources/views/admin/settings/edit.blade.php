@@ -10,7 +10,7 @@
         <form method="POST" action="{{ route('admin.settings.update') }}">
             @csrf
             
-            <h3 class="text-white font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-info-circle text-secondary mr-2"></i> Contact & Address Info</h3>
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-info-circle text-secondary mr-2"></i> Contact & Address Info</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
                     <label for="contact_email" class="form-label">Contact Email Address</label>
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <h3 class="text-white font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-university text-secondary mr-2"></i> Bank details for Donations</h3>
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-university text-secondary mr-2"></i> Bank details for Donations</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
                     <label for="bank_name" class="form-label">Bank Name</label>
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <h3 class="text-white font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-file-alt text-secondary mr-2"></i> Page Content Settings</h3>
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-file-alt text-secondary mr-2"></i> Page Content Settings</h3>
             <div class="mb-6">
                 <label for="about_us_content" class="form-label">About Us Page Content</label>
                 @php
@@ -70,7 +70,7 @@
                 <p class="text-text-muted text-xs mt-2">This text appears above the contact form on the public Contact Us page.</p>
             </div>
 
-            <h3 class="text-white font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-palette text-secondary mr-2"></i> Website Theme Colors</h3>
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-palette text-secondary mr-2"></i> Website Theme Colors</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
                     <label for="theme_primary" class="form-label">Primary Color (Base)</label>
@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <h3 class="text-white font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fab fa-facebook text-secondary mr-2"></i> Social Media & External Profiles</h3>
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fab fa-facebook text-secondary mr-2"></i> Social Media & External Profiles</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
                     <label for="facebook_url" class="form-label">Facebook Page URL</label>

@@ -25,7 +25,7 @@
             <tbody>
                 @forelse($downloads as $file)
                     <tr class="border-b border-glass-border/10 hover:bg-glass-light/5">
-                        <td class="py-4 px-4 font-semibold text-white">
+                        <td class="py-4 px-4 font-semibold text-text-primary">
                             {{ $file->title }}
                             @if($file->authors)
                                 <span class="block text-xs font-normal text-text-secondary mt-0.5">{{ $file->authors }}</span>
@@ -40,11 +40,11 @@
                         <td class="py-4 px-4 text-text-secondary font-mono">{{ $file->download_count }}</td>
                         <td class="py-4 px-4 text-right">
                             <div class="inline-flex gap-3">
-                                <a href="{{ route('admin.downloads.edit', $file->id) }}" class="text-secondary hover:text-white"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="{{ route('admin.downloads.edit', $file->id) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-edit"></i> Edit</a>
                                 <form method="POST" action="{{ route('admin.downloads.destroy', $file->id) }}" onsubmit="return confirm('Are you sure you want to delete this resource?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-accent-coral hover:text-white bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
+                                    <button type="submit" class="text-accent-coral hover:text-text-primary bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
                                 </form>
                             </div>
                         </td>

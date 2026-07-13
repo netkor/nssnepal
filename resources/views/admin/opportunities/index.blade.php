@@ -24,7 +24,7 @@
             <tbody>
                 @forelse($opportunities as $opp)
                     <tr class="border-b border-glass-border/10 hover:bg-glass-light/5">
-                        <td class="py-4 px-4 font-semibold text-white">{{ $opp->title }}</td>
+                        <td class="py-4 px-4 font-semibold text-text-primary">{{ $opp->title }}</td>
                         <td class="py-4 px-4">
                             <span class="badge badge-ongoing text-[10px]">
                                 {{ str_replace('_', ' ', $opp->type) }}
@@ -37,11 +37,11 @@
                         </td>
                         <td class="py-4 px-4 text-right">
                             <div class="inline-flex gap-3">
-                                <a href="{{ route('admin.opportunities.edit', $opp->id) }}" class="text-secondary hover:text-white"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="{{ route('admin.opportunities.edit', $opp->id) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-edit"></i> Edit</a>
                                 <form method="POST" action="{{ route('admin.opportunities.destroy', $opp->id) }}" onsubmit="return confirm('Are you sure you want to delete this listing?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-accent-coral hover:text-white bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
+                                    <button type="submit" class="text-accent-coral hover:text-text-primary bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
                                 </form>
                             </div>
                         </td>

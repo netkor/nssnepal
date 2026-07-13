@@ -13,13 +13,13 @@
     <!-- Banner Page Header -->
     <header class="page-header relative overflow-hidden">
         <div class="container mx-auto px-4 md:px-8 relative z-10 text-left max-w-4xl">
-            <a href="/projects" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-2 mb-6 transition">
+            <a href="/projects" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-2 mb-6 transition">
                 <i class="fas fa-arrow-left"></i> Back to Projects
             </a>
             <span class="badge {{ $project->status === 'ongoing' ? 'badge-ongoing' : 'badge-completed' }} mb-4">
                 {{ $project->status }}
             </span>
-            <h1 class="text-3xl md:text-5xl font-heading font-extrabold text-white mb-4 leading-tight">
+            <h1 class="text-3xl md:text-5xl font-heading font-extrabold text-text-primary mb-4 leading-tight">
                 {{ $project->title }}
             </h1>
             <div class="section-divider"></div>
@@ -52,7 +52,7 @@
             <!-- Description summary box -->
             @if($project->description)
                 <div class="glass p-6 md:p-8 rounded-xl border border-primary-accent/20 mb-12 animate-on-scroll">
-                    <h3 class="text-white font-heading font-semibold text-lg mb-2">Project Brief Summary</h3>
+                    <h3 class="text-text-primary font-heading font-semibold text-lg mb-2">Project Brief Summary</h3>
                     <p class="text-text-secondary text-md leading-relaxed italic">
                         "{{ $project->description }}"
                     </p>

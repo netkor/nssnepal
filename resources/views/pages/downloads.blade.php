@@ -7,7 +7,7 @@
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-2 block">Resources</span>
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-white">Downloads</h1>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-text-primary">Downloads</h1>
             <div class="section-divider mx-auto"></div>
         </div>
     </header>
@@ -20,17 +20,17 @@
             <div class="flex flex-col lg:flex-row justify-between items-center mb-16 animate-on-scroll gap-6 max-w-4xl mx-auto">
                 <!-- Filters tab -->
                 <div class="glass p-1.5 rounded-xl flex gap-2 overflow-x-auto w-full lg:w-auto pb-1">
-                    <a href="{{ route('downloads.publications', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'publications' ? 'bg-primary text-white shadow' : 'text-text-secondary hover:text-white' }}">
+                    <a href="{{ route('downloads.publications', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'publications' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Scientific Publications
                     </a>
-                    <a href="{{ route('downloads.reports', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'reports' ? 'bg-primary text-white shadow' : 'text-text-secondary hover:text-white' }}">
+                    <a href="{{ route('downloads.reports', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'reports' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Annual Reports
                     </a>
                 </div>
                 
                 <!-- Search Box -->
                 <form action="{{ $type === 'publications' ? route('downloads.publications') : route('downloads.reports') }}" method="GET" class="relative w-full lg:w-auto">
-                    <input type="text" name="search" placeholder="Search resources..." value="{{ request('search') }}" class="w-full lg:w-80 bg-glass-light/10 border border-glass-border/30 rounded-xl py-3 px-5 text-white focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition placeholder-text-muted">
+                    <input type="text" name="search" placeholder="Search resources..." value="{{ request('search') }}" class="w-full lg:w-80 bg-glass-light/10 border border-glass-border/30 rounded-xl py-3 px-5 text-text-primary focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition placeholder-text-muted">
                     <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 text-text-muted hover:text-secondary transition">
                         <i class="fas fa-search"></i>
                     </button>
@@ -55,7 +55,7 @@
                                 @endif
                             </div>
 
-                            <h3 class="text-xl font-bold font-heading text-white mb-2 leading-snug">
+                            <h3 class="text-xl font-bold font-heading text-text-primary mb-2 leading-snug">
                                 {{ $file->title }}
                             </h3>
 
@@ -94,7 +94,7 @@
                 @empty
                     <div class="text-center py-16 text-text-secondary glass-card">
                         <i class="fas fa-file-pdf text-4xl mb-4 text-primary-muted"></i>
-                        <h3 class="text-lg font-bold text-white mb-1">No Files Found</h3>
+                        <h3 class="text-lg font-bold text-text-primary mb-1">No Files Found</h3>
                         <p class="text-sm">Please check back later or contact the office administration.</p>
                     </div>
                 @endforelse

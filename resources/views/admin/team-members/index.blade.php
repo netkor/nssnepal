@@ -25,7 +25,7 @@
             <tbody>
                 @forelse($team as $member)
                     <tr class="border-b border-glass-border/10 hover:bg-glass-light/5">
-                        <td class="py-4 px-4 font-semibold text-white">{{ $member->name }}</td>
+                        <td class="py-4 px-4 font-semibold text-text-primary">{{ $member->name }}</td>
                         <td class="py-4 px-4 text-text-secondary">{{ $member->designation }}</td>
                         <td class="py-4 px-4">
                             <span class="badge badge-ongoing text-[10px]">
@@ -35,11 +35,11 @@
                         <td class="py-4 px-4 text-text-secondary font-mono">{{ $member->order }}</td>
                         <td class="py-4 px-4 text-right">
                             <div class="inline-flex gap-3">
-                                <a href="{{ route('admin.team-members.edit', $member->id) }}" class="text-secondary hover:text-white"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="{{ route('admin.team-members.edit', $member->id) }}" class="text-secondary hover:text-text-primary"><i class="fas fa-edit"></i> Edit</a>
                                 <form method="POST" action="{{ route('admin.team-members.destroy', $member->id) }}" onsubmit="return confirm('Are you sure you want to delete this member?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-accent-coral hover:text-white bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
+                                    <button type="submit" class="text-accent-coral hover:text-text-primary bg-transparent border-none cursor-pointer p-0"><i class="fas fa-trash"></i> Delete</button>
                                 </form>
                             </div>
                         </td>

@@ -7,7 +7,7 @@
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-2 block">Visual Highlights</span>
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-white">Our Gallery</h1>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-text-primary">Our Gallery</h1>
             <div class="section-divider mx-auto"></div>
         </div>
     </header>
@@ -27,13 +27,13 @@
                             @endif
                             <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-60"></div>
                             <div class="absolute bottom-4 left-4 right-4">
-                                <span class="bg-primary-accent text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+                                <span class="bg-primary-accent text-text-primary text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
                                     {{ $album->images->count() }} Images
                                 </span>
                             </div>
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold font-heading text-white mb-2 group-hover:text-secondary transition">
+                            <h3 class="text-xl font-bold font-heading text-text-primary mb-2 group-hover:text-secondary transition">
                                 <a href="/gallery/{{ $album->slug }}">{{ $album->title }}</a>
                             </h3>
                             @if($album->description)
@@ -41,7 +41,7 @@
                                     {{ Str::limit($album->description, 100) }}
                                 </p>
                             @endif
-                            <a href="/gallery/{{ $album->slug }}" class="text-secondary group-hover:text-white text-xs font-semibold flex items-center gap-1.5 mt-auto transition">
+                            <a href="/gallery/{{ $album->slug }}" class="text-secondary group-hover:text-text-primary text-xs font-semibold flex items-center gap-1.5 mt-auto transition">
                                 Open Album <i class="fas fa-arrow-right text-[9px]"></i>
                             </a>
                         </div>
@@ -49,7 +49,7 @@
                 @empty
                     <div class="col-span-3 text-center py-16 text-text-secondary glass-card">
                         <i class="fas fa-images text-4xl mb-4 text-primary-muted"></i>
-                        <h3 class="text-lg font-bold text-white mb-2">No Photo Albums Found</h3>
+                        <h3 class="text-lg font-bold text-text-primary mb-2">No Photo Albums Found</h3>
                         <p class="text-sm">Albums can be managed in the administration portal.</p>
                     </div>
                 @endforelse

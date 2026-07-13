@@ -7,7 +7,7 @@
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-2 block">Our Foundations</span>
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-white">About Us</h1>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-text-primary">About Us</h1>
             <div class="section-divider mx-auto"></div>
         </div>
     </header>
@@ -20,7 +20,7 @@
                 <div class="glass-card p-8 md:p-10 animate-on-scroll relative overflow-hidden">
                     <div class="absolute right-6 top-6 text-primary-light/10 text-6xl font-bold font-heading"><i class="fas fa-bullseye"></i></div>
                     <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Empowering Actions</span>
-                    <h2 class="text-2xl md:text-3xl font-heading font-bold text-white mb-4">Our Mission</h2>
+                    <h2 class="text-2xl md:text-3xl font-heading font-bold text-text-primary mb-4">Our Mission</h2>
                     <p class="text-text-secondary text-md leading-relaxed">
                         To conduct scientific research in biodiversity conservation, facilitate nature literacy, and establish active conservation stewardship programs. We seek to protect ecosystems through scientific understanding and grass-roots public mobilization.
                     </p>
@@ -30,7 +30,7 @@
                 <div class="glass-card p-8 md:p-10 animate-on-scroll delay-1 relative overflow-hidden">
                     <div class="absolute right-6 top-6 text-primary-light/10 text-6xl font-bold font-heading"><i class="fas fa-eye"></i></div>
                     <span class="text-accent-gold text-xs font-bold uppercase tracking-widest block mb-2">Inspiring Tomorrow</span>
-                    <h2 class="text-2xl md:text-3xl font-heading font-bold text-white mb-4">Our Vision</h2>
+                    <h2 class="text-2xl md:text-3xl font-heading font-bold text-text-primary mb-4">Our Vision</h2>
                     <p class="text-text-secondary text-md leading-relaxed">
                         A harmonious coexistence between humans and nature in Nepal, where communities are active guardians of their local ecological resources, backed by evidence-based scientific research.
                     </p>
@@ -39,7 +39,7 @@
 
             <!-- Details Section -->
             <div class="max-w-4xl mx-auto text-center mb-16 animate-on-scroll">
-                <h3 class="text-2xl font-bold font-heading text-white mb-6">Who We Are & What We Do</h3>
+                <h3 class="text-2xl font-bold font-heading text-text-primary mb-6">Who We Are & What We Do</h3>
                 
                 @if(!empty($siteSettings['about_us_content']))
                     <div class="prose prose-invert max-w-none text-text-secondary leading-relaxed text-justify mx-auto">
@@ -65,7 +65,7 @@
             <div class="border-t border-glass-border/30 pt-16">
                 <div class="text-center mb-12 animate-on-scroll">
                     <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Our Key Activities</span>
-                    <h2 class="text-3xl font-heading font-bold text-white">Focus Areas</h2>
+                    <h2 class="text-3xl font-heading font-bold text-text-primary">Focus Areas</h2>
                     <div class="section-divider mx-auto"></div>
                 </div>
 
@@ -75,7 +75,7 @@
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl">
                             <i class="fas fa-paw"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Wildlife Ecology & Monitoring</h3>
+                        <h3 class="text-lg font-bold text-text-primary">Wildlife Ecology & Monitoring</h3>
                         <p class="text-text-secondary text-sm">
                             We perform active field research, habitat suitability mapping, diet analysis, and conflict threat modeling on threatened carnivores and herbivores like Common Leopards, Striped Hyenas, and Himalayan Musk Deer.
                         </p>
@@ -86,7 +86,7 @@
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl">
                             <i class="fas fa-school"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Environmental Education</h3>
+                        <h3 class="text-lg font-bold text-text-primary">Environmental Education</h3>
                         <p class="text-text-secondary text-sm">
                             NSS designs nature education materials, conducts school awareness workshops, runs village-level group discussions, and hosts bird-watching activities to cultivate conservation literacy in children and adults.
                         </p>
@@ -97,7 +97,7 @@
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl">
                             <i class="fas fa-users-cog"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Community & Youth Empowerment</h3>
+                        <h3 class="text-lg font-bold text-text-primary">Community & Youth Empowerment</h3>
                         <p class="text-text-secondary text-sm">
                             Through thesis grants, internships, and workshops, we mentor local youth and park rangers. We establish community stewardship structures to counter illegal poaching and habitat fragmentation.
                         </p>

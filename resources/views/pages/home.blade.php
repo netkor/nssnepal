@@ -18,7 +18,7 @@
                     <div class="container mx-auto px-4 md:px-8 relative z-20 h-full flex flex-col justify-center min-h-[90vh]">
                         <div class="max-w-3xl animate-on-scroll">
                             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-3 block">Natural Science Society Nepal</span>
-                            <h1 class="text-4xl md:text-6xl font-heading font-extrabold text-white mb-6 leading-tight">
+                            <h1 class="text-4xl md:text-6xl font-heading font-extrabold text-text-primary mb-6 leading-tight">
                                 {{ $slide->title }}
                             </h1>
                             <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-2xl">
@@ -36,10 +36,10 @@
             
             <!-- Slider Controls -->
             @if($sliders->count() > 1)
-                <button class="absolute left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full glass border border-glass-border/30 hover:bg-primary-accent flex items-center justify-center text-white transition duration-300" onclick="prevSlide()">
+                <button class="absolute left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full glass border border-glass-border/30 hover:bg-primary-accent flex items-center justify-center text-text-primary transition duration-300" onclick="prevSlide()">
                     <i class="fas fa-chevron-left"></i>
                 </button>
-                <button class="absolute right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full glass border border-glass-border/30 hover:bg-primary-accent flex items-center justify-center text-white transition duration-300" onclick="nextSlide()">
+                <button class="absolute right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full glass border border-glass-border/30 hover:bg-primary-accent flex items-center justify-center text-text-primary transition duration-300" onclick="nextSlide()">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             @endif
@@ -50,7 +50,7 @@
             <div class="container mx-auto px-4 md:px-8 relative z-20 h-full flex flex-col justify-center min-h-[90vh]">
                 <div class="max-w-3xl animate-on-scroll">
                     <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-3 block">Natural Science Society Nepal</span>
-                    <h1 class="text-4xl md:text-6xl font-heading font-extrabold text-white mb-6 leading-tight">
+                    <h1 class="text-4xl md:text-6xl font-heading font-extrabold text-text-primary mb-6 leading-tight">
                         Research & Conservation of Biodiversity
                     </h1>
                     <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-2xl">
@@ -71,7 +71,7 @@
                 <!-- Text block -->
                 <div class="animate-on-scroll">
                     <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Who We Are</span>
-                    <h2 class="section-title text-white">Natural Science Society (NSS)</h2>
+                    <h2 class="section-title text-text-primary">Natural Science Society (NSS)</h2>
                     <div class="section-divider"></div>
                     <p class="text-text-secondary text-md mb-6 leading-relaxed">
                         NSS is a non-governmental organization based in Nepal. We are focused on research and conservation of biodiversity, environmental education, and building community-level conservation stewards.
@@ -95,7 +95,7 @@
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl">
                             <i class="fas fa-microscope"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Scientific Research</h3>
+                        <h3 class="text-lg font-bold text-text-primary">Scientific Research</h3>
                         <p class="text-text-secondary text-sm">
                             Conducting rigorous wildlife monitoring, habitat evaluations, and conflict mitigation studies.
                         </p>
@@ -105,7 +105,7 @@
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Environmental Education</h3>
+                        <h3 class="text-lg font-bold text-text-primary">Environmental Education</h3>
                         <p class="text-text-secondary text-sm">
                             Empowering students, educators, and local groups with nature literacy and protection seminars.
                         </p>
@@ -115,7 +115,7 @@
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl">
                             <i class="fas fa-hands-helping"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Community Stewardship</h3>
+                        <h3 class="text-lg font-bold text-text-primary">Community Stewardship</h3>
                         <p class="text-text-secondary text-sm">
                             Training game-scouts, local committees, and young researchers to govern conservation locally.
                         </p>
@@ -125,7 +125,7 @@
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl">
                             <i class="fas fa-book-open"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Publications</h3>
+                        <h3 class="text-lg font-bold text-text-primary">Publications</h3>
                         <p class="text-text-secondary text-sm">
                             Sharing conservation data through international scientific publications and educational posters.
                         </p>
@@ -165,7 +165,7 @@
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
                 <div class="animate-on-scroll">
                     <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Our Field Initiatives</span>
-                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">Featured Projects</h2>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary">Featured Projects</h2>
                     <div class="section-divider"></div>
                 </div>
                 <a href="/projects" class="btn-secondary py-2 px-6 flex items-center gap-2 hover:scale-105 transition-all text-sm">
@@ -200,13 +200,13 @@
                             </div>
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold font-heading text-white mb-3 hover:text-secondary transition">
+                            <h3 class="text-xl font-bold font-heading text-text-primary mb-3 hover:text-secondary transition">
                                 <a href="/projects/{{ $project->slug }}">{{ $project->title }}</a>
                             </h3>
                             <p class="text-text-secondary text-sm leading-relaxed mb-6 flex-grow">
                                 {{ Str::limit($project->description, 130) }}
                             </p>
-                            <a href="/projects/{{ $project->slug }}" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-1.5 mt-auto transition">
+                            <a href="/projects/{{ $project->slug }}" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-1.5 mt-auto transition">
                                 Read Project Details <i class="fas fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>
@@ -230,7 +230,7 @@
             <div class="glass-card p-8 md:p-12 max-w-5xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8">
                 <div class="max-w-2xl animate-on-scroll">
                     <span class="text-accent-gold text-xs font-bold uppercase tracking-widest block mb-2">Contribute to Conservation</span>
-                    <h2 class="text-2xl md:text-3xl font-heading font-bold text-white mb-4">Support Our Ecological Endeavors</h2>
+                    <h2 class="text-2xl md:text-3xl font-heading font-bold text-text-primary mb-4">Support Our Ecological Endeavors</h2>
                     <p class="text-text-secondary text-md leading-relaxed">
                         Natural Science Society (NSS) is sustained through memberships and donations from conservation organizations, grants, and people like you. Join us or support us through banking details.
                     </p>
@@ -253,7 +253,7 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center mb-12 animate-on-scroll">
                 <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Trusted By</span>
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">Our Partners & Collaborators</h2>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary">Our Partners & Collaborators</h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
@@ -274,11 +274,11 @@
                     @else
                         @if($partner->url)
                             <a href="{{ $partner->url }}" target="_blank" rel="noopener noreferrer" class="partner-text-item group" title="{{ $partner->name }}">
-                                <span class="text-white font-heading font-bold text-lg group-hover:text-secondary transition">{{ $partner->name }}</span>
+                                <span class="text-text-primary font-heading font-bold text-lg group-hover:text-secondary transition">{{ $partner->name }}</span>
                             </a>
                         @else
                             <div class="partner-text-item" title="{{ $partner->name }}">
-                                <span class="text-white font-heading font-bold text-lg">{{ $partner->name }}</span>
+                                <span class="text-text-primary font-heading font-bold text-lg">{{ $partner->name }}</span>
                             </div>
                         @endif
                     @endif
@@ -294,7 +294,7 @@
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
                 <div class="animate-on-scroll">
                     <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Announcements & Programs</span>
-                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">News & Events</h2>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-text-primary">News & Events</h2>
                     <div class="section-divider"></div>
                 </div>
                 <a href="/news-and-events" class="btn-secondary py-2 px-6 flex items-center gap-2 hover:scale-105 transition-all text-sm">
@@ -311,19 +311,19 @@
                             @else
                                 <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=800&q=80" alt="{{ $article->title }}" class="w-full h-full object-cover">
                             @endif
-                            <div class="absolute top-4 left-4 bg-primary-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                            <div class="absolute top-4 left-4 bg-primary-accent text-text-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                                 {{ $article->type }}
                             </div>
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <span class="text-text-muted text-xs mb-2 block"><i class="fas fa-calendar-alt mr-1"></i> {{ $article->published_at?->format('M d, Y') ?? $article->created_at->format('M d, Y') }}</span>
-                            <h3 class="text-lg font-bold font-heading text-white mb-3 hover:text-secondary transition">
+                            <h3 class="text-lg font-bold font-heading text-text-primary mb-3 hover:text-secondary transition">
                                 <a href="/news-and-events/{{ $article->slug }}">{{ $article->title }}</a>
                             </h3>
                             <p class="text-text-secondary text-sm leading-relaxed mb-4 flex-grow">
                                 {{ Str::limit($article->excerpt, 110) }}
                             </p>
-                            <a href="/news-and-events/{{ $article->slug }}" class="text-secondary hover:text-white text-xs font-semibold flex items-center gap-1.5 transition">
+                            <a href="/news-and-events/{{ $article->slug }}" class="text-secondary hover:text-text-primary text-xs font-semibold flex items-center gap-1.5 transition">
                                 Read Article <i class="fas fa-arrow-right text-[9px]"></i>
                             </a>
                         </div>

@@ -13,16 +13,16 @@
     <!-- Banner Page Header -->
     <header class="page-header relative overflow-hidden">
         <div class="container mx-auto px-4 md:px-8 relative z-10 text-left max-w-4xl">
-            <a href="/news-and-events" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-2 mb-6 transition">
+            <a href="/news-and-events" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-2 mb-6 transition">
                 <i class="fas fa-arrow-left"></i> Back to Announcements
             </a>
             <div class="flex items-center gap-3 mb-4">
-                <span class="bg-primary-accent text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                <span class="bg-primary-accent text-text-primary text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     {{ $newsEvent->type }}
                 </span>
                 <span class="text-text-muted text-xs"><i class="fas fa-calendar-alt mr-1"></i> {{ $newsEvent->published_at?->format('M d, Y') ?? $newsEvent->created_at->format('M d, Y') }}</span>
             </div>
-            <h1 class="text-3xl md:text-5xl font-heading font-extrabold text-white mb-4 leading-tight">
+            <h1 class="text-3xl md:text-5xl font-heading font-extrabold text-text-primary mb-4 leading-tight">
                 {{ $newsEvent->title }}
             </h1>
             <div class="section-divider"></div>
@@ -50,7 +50,7 @@
             <!-- Related articles sidebar grid -->
             @if($related->count() > 0)
                 <div class="border-t border-glass-border/30 pt-16 mt-16">
-                    <h3 class="text-2xl font-bold font-heading text-white mb-8">Related Announcements</h3>
+                    <h3 class="text-2xl font-bold font-heading text-text-primary mb-8">Related Announcements</h3>
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         @foreach($related as $art)
@@ -63,7 +63,7 @@
                                     @endif
                                 </div>
                                 <div class="p-4 flex flex-col flex-grow">
-                                    <h4 class="text-sm font-bold font-heading text-white mb-2 line-clamp-2 hover:text-secondary transition">
+                                    <h4 class="text-sm font-bold font-heading text-text-primary mb-2 line-clamp-2 hover:text-secondary transition">
                                         <a href="/news-and-events/{{ $art->slug }}">{{ $art->title }}</a>
                                     </h4>
                                     <span class="text-text-muted text-[10px] block mt-auto">{{ $art->published_at?->format('M d, Y') ?? $art->created_at->format('M d, Y') }}</span>

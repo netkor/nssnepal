@@ -7,7 +7,7 @@
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-2 block">Help Us Protect Nature</span>
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-white">Support Us</h1>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-text-primary">Support Us</h1>
             <div class="section-divider mx-auto"></div>
         </div>
     </header>
@@ -19,7 +19,7 @@
             <!-- Membership Tiers Title -->
             <div class="text-center mb-12 animate-on-scroll">
                 <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Join Our Community</span>
-                <h2 class="text-3xl font-heading font-bold text-white">Membership Plans</h2>
+                <h2 class="text-3xl font-heading font-bold text-text-primary">Membership Plans</h2>
                 <div class="section-divider mx-auto"></div>
                 <p class="text-text-secondary text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
                     By becoming a member, you directly fund our local research and school-level environmental campaigns. Choose a tier that fits your background.
@@ -36,7 +36,7 @@
                             </div>
                         @endif
                         
-                        <h3 class="text-xl font-bold font-heading text-white mb-4">{{ $plan->type }}</h3>
+                        <h3 class="text-xl font-bold font-heading text-text-primary mb-4">{{ $plan->type }}</h3>
                         
                         <div class="mb-6 flex flex-col items-center">
                             <span class="price">Rs. {{ number_format($plan->cost_initial) }}</span>
@@ -68,7 +68,7 @@
                     
                     <div class="animate-on-scroll">
                         <span class="text-accent-gold text-xs font-bold uppercase tracking-widest block mb-2">Direct Contribution</span>
-                        <h2 class="text-3xl font-heading font-bold text-white mb-4">Bank Donations</h2>
+                        <h2 class="text-3xl font-heading font-bold text-text-primary mb-4">Bank Donations</h2>
                         <p class="text-text-secondary text-sm leading-relaxed mb-6">
                             If you wish to make a general donation or fund a specific species project (e.g., striped hyena research or nesting ecology of the lesser adjutant), you can wire funds directly to our bank account.
                         </p>
@@ -82,30 +82,30 @@
 
                     <!-- Bank details display box -->
                     <div class="glass-card p-8 animate-on-scroll delay-1">
-                        <h3 class="text-xl font-bold font-heading text-white mb-6 border-b border-glass-border/30 pb-4 flex items-center gap-2">
+                        <h3 class="text-xl font-bold font-heading text-text-primary mb-6 border-b border-glass-border/30 pb-4 flex items-center gap-2">
                             <i class="fas fa-university text-secondary"></i> Bank Details
                         </h3>
 
                         <div class="flex flex-col gap-4 text-sm text-text-secondary">
                             <div class="flex justify-between border-b border-glass-border/10 pb-2">
-                                <span class="font-semibold text-white">Account Name</span>
+                                <span class="font-semibold text-text-primary">Account Name</span>
                                 <span>Natural Science Society</span>
                             </div>
                             <div class="flex justify-between border-b border-glass-border/10 pb-2">
-                                <span class="font-semibold text-white">Bank Name</span>
+                                <span class="font-semibold text-text-primary">Bank Name</span>
                                 <span>Rastriya Banijya Bank</span>
                             </div>
                             <div class="flex justify-between border-b border-glass-border/10 pb-2">
-                                <span class="font-semibold text-white">Branch</span>
+                                <span class="font-semibold text-text-primary">Branch</span>
                                 <span>Kirtipur Branch, Kathmandu</span>
                             </div>
                             <div class="flex justify-between border-b border-glass-border/10 pb-2">
-                                <span class="font-semibold text-white">Account Number</span>
-                                <span class="font-mono text-white text-md tracking-wider">1170100050419001</span>
+                                <span class="font-semibold text-text-primary">Account Number</span>
+                                <span class="font-mono text-text-primary text-md tracking-wider">1170100050419001</span>
                             </div>
                             <div class="flex justify-between pb-2">
-                                <span class="font-semibold text-white">SWIFT Code</span>
-                                <span class="font-mono text-white">RBBANKPA</span>
+                                <span class="font-semibold text-text-primary">SWIFT Code</span>
+                                <span class="font-mono text-text-primary">RBBANKPA</span>
                             </div>
                         </div>
                     </div>
@@ -122,12 +122,12 @@
             <!-- Modal Header -->
             <div class="flex items-center justify-between mb-6 pb-4 border-b border-glass-border/30">
                 <div>
-                    <h3 class="text-xl font-bold font-heading text-white flex items-center gap-2">
+                    <h3 class="text-xl font-bold font-heading text-text-primary flex items-center gap-2">
                         <i class="fas fa-id-card text-secondary"></i> Membership Application
                     </h3>
                     <p class="text-text-secondary text-xs mt-1" id="modalPlanLabel">Applying for: <span class="text-secondary font-semibold" id="modalPlanName"></span></p>
                 </div>
-                <button onclick="closeMembershipModal()" class="text-text-muted hover:text-white transition w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10">
+                <button onclick="closeMembershipModal()" class="text-text-muted hover:text-text-primary transition w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10">
                     <i class="fas fa-times"></i>
                 </button>
             </div>

@@ -7,7 +7,7 @@
     <header class="page-header">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <span class="text-secondary text-sm font-semibold tracking-widest uppercase mb-2 block">Get in Touch</span>
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-white">Contact Us</h1>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-text-primary">Contact Us</h1>
             <div class="section-divider mx-auto"></div>
         </div>
     </header>
@@ -20,7 +20,7 @@
                 <!-- Contact info details sidebar -->
                 <div class="flex flex-col gap-8 animate-on-scroll">
                     <div>
-                        <h2 class="text-2xl font-bold font-heading text-white mb-4">Send Us a Message</h2>
+                        <h2 class="text-2xl font-bold font-heading text-text-primary mb-4">Send Us a Message</h2>
                         @if(!empty($siteSettings['contact_page_intro']))
                             <div class="prose prose-invert max-w-none text-text-secondary leading-relaxed">
                                 {!! $siteSettings['contact_page_intro'] !!}
@@ -39,7 +39,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <h4 class="text-white font-semibold text-md mb-1">Our Location</h4>
+                                <h4 class="text-text-primary font-semibold text-md mb-1">Our Location</h4>
                                 <p class="text-text-secondary text-sm">Kirtipur, Kathmandu, Nepal</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div>
-                                <h4 class="text-white font-semibold text-md mb-1">Email Addresses</h4>
+                                <h4 class="text-text-primary font-semibold text-md mb-1">Email Addresses</h4>
                                 <p class="text-text-secondary text-sm mb-1">info@brcsociety.org</p>
                                 <p class="text-text-secondary text-sm">shivish.bhandari@yahoo.com</p>
                             </div>
@@ -62,7 +62,7 @@
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div>
-                                <h4 class="text-white font-semibold text-md mb-1">Phone Number</h4>
+                                <h4 class="text-text-primary font-semibold text-md mb-1">Phone Number</h4>
                                 <p class="text-text-secondary text-sm">+977-1-XXXXXXXX</p>
                             </div>
                         </div>

@@ -5,7 +5,7 @@
 
 @section('content')
     <div class="mb-6">
-        <a href="{{ route('admin.projects.index') }}" class="text-secondary hover:text-white text-sm font-semibold flex items-center gap-2"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        <a href="{{ route('admin.projects.index') }}" class="text-secondary hover:text-text-primary text-sm font-semibold flex items-center gap-2"><i class="fas fa-arrow-left"></i> Back to Projects</a>
     </div>
 
     <div class="admin-card max-w-4xl">
@@ -59,7 +59,7 @@
             <div class="mb-8">
                 <label class="flex items-center gap-3 cursor-pointer">
                     <input type="checkbox" name="is_featured" value="1" {{ old('is_featured', $project->is_featured) ? 'checked' : '' }} class="w-5 h-5 text-primary-accent rounded border-glass-border/30 bg-glass-light/10 focus:ring-primary-accent focus:ring-offset-dark-bg">
-                    <span class="text-white font-medium">Feature on Homepage</span>
+                    <span class="text-text-primary font-medium">Feature on Homepage</span>
                 </label>
                 <p class="text-text-muted text-xs mt-1 ml-8">If checked, this project will appear in the top 3 featured slots on the homepage.</p>
             </div>
