@@ -54,6 +54,9 @@
                     --color-dark-surface: {{ $siteSettings['theme_surface'] }};
                     --color-dark-surface-light: color-mix(in srgb, {{ $siteSettings['theme_surface'] }} 90%, white);
                     --color-dark-surface-elevated: color-mix(in srgb, {{ $siteSettings['theme_surface'] }} 80%, white);
+                    --color-glass: color-mix(in srgb, {{ $siteSettings['theme_surface'] }} 60%, transparent);
+                    --color-glass-light: color-mix(in srgb, {{ $siteSettings['theme_surface'] }} 30%, transparent);
+                    --color-glass-border: color-mix(in srgb, {{ $siteSettings['theme_primary'] ?? '#0e1f34' }} 25%, transparent);
                 @endif
                 @if(!empty($siteSettings['theme_text']))
                     --color-text-primary: {{ $siteSettings['theme_text'] }};
