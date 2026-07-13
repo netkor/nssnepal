@@ -20,13 +20,13 @@
             <div class="flex flex-col lg:flex-row justify-between items-center mb-16 animate-on-scroll gap-6">
                 <!-- Filters tab -->
                 <div class="glass p-1.5 rounded-xl flex gap-2 overflow-x-auto w-full lg:w-auto pb-1">
-                    <a href="{{ route('projects.index', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ is_null($status) ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('projects.index', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ is_null($status) ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         All Projects
                     </a>
-                    <a href="{{ route('projects.index', ['status' => 'ongoing', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'ongoing' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('projects.index', ['status' => 'ongoing', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'ongoing' ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Ongoing
                     </a>
-                    <a href="{{ route('projects.index', ['status' => 'completed', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'completed' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('projects.index', ['status' => 'completed', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $status === 'completed' ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Completed
                     </a>
                 </div>

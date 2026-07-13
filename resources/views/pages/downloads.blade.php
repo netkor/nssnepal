@@ -20,10 +20,10 @@
             <div class="flex flex-col lg:flex-row justify-between items-center mb-16 animate-on-scroll gap-6 max-w-4xl mx-auto">
                 <!-- Filters tab -->
                 <div class="glass p-1.5 rounded-xl flex gap-2 overflow-x-auto w-full lg:w-auto pb-1">
-                    <a href="{{ route('downloads.publications', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'publications' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('downloads.publications', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'publications' ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Scientific Publications
                     </a>
-                    <a href="{{ route('downloads.reports', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'reports' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('downloads.reports', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ $type === 'reports' ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Annual Reports
                     </a>
                 </div>

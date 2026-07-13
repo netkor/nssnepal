@@ -19,13 +19,13 @@
             <div class="flex flex-col lg:flex-row justify-between items-center mb-16 animate-on-scroll gap-6 max-w-5xl mx-auto">
                 <!-- Filters tab -->
                 <div class="glass p-1.5 rounded-xl flex gap-2 overflow-x-auto w-full lg:w-auto pb-1">
-                    <a href="{{ route('news.index', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ empty(request('type')) ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('news.index', ['search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ empty(request('type')) ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         All Updates
                     </a>
-                    <a href="{{ route('news.index', ['type' => 'news', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ request('type') === 'news' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('news.index', ['type' => 'news', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ request('type') === 'news' ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         News
                     </a>
-                    <a href="{{ route('news.index', ['type' => 'event', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ request('type') === 'event' ? 'bg-primary text-text-primary shadow' : 'text-text-secondary hover:text-text-primary' }}">
+                    <a href="{{ route('news.index', ['type' => 'event', 'search' => request('search')]) }}" class="px-6 py-2.5 rounded-lg text-sm font-semibold transition duration-300 whitespace-nowrap {{ request('type') === 'event' ? 'bg-primary text-dark-bg shadow' : 'text-text-secondary hover:text-text-primary' }}">
                         Events
                     </a>
                 </div>
