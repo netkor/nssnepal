@@ -921,8 +921,8 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--color-accent-gold);
     background: linear-gradient(
         135deg,
-        rgba(14, 27, 28, 0.9) 0%,
-        rgba(28, 51, 54, 0.8) 100%
+        color-mix(in srgb, var(--color-dark-surface) 90%, transparent) 0%,
+        color-mix(in srgb, var(--color-dark-surface) 70%, transparent) 100%
     );
 }
 
