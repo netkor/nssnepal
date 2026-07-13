@@ -73,8 +73,7 @@
             <a href="/" class="flex items-center gap-3">
                 <img src="/images/logo.png" alt="NSS Logo" class="h-10 w-10 rounded-full border border-secondary/30 object-cover">
                 <div class="flex flex-col">
-                    <span class="text-xl font-bold font-heading tracking-wide uppercase text-white leading-none">NSS Nepal</span>
-                    <span class="text-[9px] text-text-secondary tracking-widest uppercase">Natural Science Society</span>
+                    <span class="text-lg font-bold font-heading tracking-wide uppercase text-white leading-none">Natural Science Society</span>
                 </div>
             </a>
 

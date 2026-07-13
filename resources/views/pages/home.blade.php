@@ -136,7 +136,7 @@
     </section>
 
     <!-- Stats Counters -->
-    <section class="py-16 bg-dark-surface border-y border-glass-border/30">
+    <!-- <section class="py-16 bg-dark-surface border-y border-glass-border/30">
         <div class="container mx-auto px-4 md:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="stat-item animate-on-scroll">
@@ -157,7 +157,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Featured Projects -->
     <section class="py-20 bg-dark-bg">
