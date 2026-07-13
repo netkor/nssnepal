@@ -75,36 +75,36 @@
                 <div>
                     <label for="theme_primary" class="form-label">Primary Color (Base)</label>
                     <div class="flex items-center gap-3">
-                        <input type="color" id="theme_primary" name="theme_primary" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer" value="{{ old('theme_primary', $settings['theme_primary'] ?? '#184649') }}">
-                        <span class="text-text-muted text-xs">Default: #184649 (Teal Dark)</span>
+                        <input type="color" id="theme_primary_picker" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer color-picker" value="{{ old('theme_primary', $settings['theme_primary'] ?? '#0e1f34') }}">
+                        <input type="text" id="theme_primary" name="theme_primary" class="form-input font-mono uppercase text-sm color-text" value="{{ old('theme_primary', $settings['theme_primary'] ?? '#0e1f34') }}" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
                     </div>
                 </div>
                 <div>
                     <label for="theme_secondary" class="form-label">Secondary / Highlight Color</label>
                     <div class="flex items-center gap-3">
-                        <input type="color" id="theme_secondary" name="theme_secondary" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer" value="{{ old('theme_secondary', $settings['theme_secondary'] ?? '#7DD8DD') }}">
-                        <span class="text-text-muted text-xs">Default: #7DD8DD (Cyan)</span>
+                        <input type="color" id="theme_secondary_picker" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer color-picker" value="{{ old('theme_secondary', $settings['theme_secondary'] ?? '#f27c1a') }}">
+                        <input type="text" id="theme_secondary" name="theme_secondary" class="form-input font-mono uppercase text-sm color-text" value="{{ old('theme_secondary', $settings['theme_secondary'] ?? '#f27c1a') }}" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
                     </div>
                 </div>
                 <div>
                     <label for="theme_bg" class="form-label">Background Color (Deepest)</label>
                     <div class="flex items-center gap-3">
-                        <input type="color" id="theme_bg" name="theme_bg" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer" value="{{ old('theme_bg', $settings['theme_bg'] ?? '#070F10') }}">
-                        <span class="text-text-muted text-xs">Default: #070F10 (Dark Teal)</span>
+                        <input type="color" id="theme_bg_picker" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer color-picker" value="{{ old('theme_bg', $settings['theme_bg'] ?? '#070f1a') }}">
+                        <input type="text" id="theme_bg" name="theme_bg" class="form-input font-mono uppercase text-sm color-text" value="{{ old('theme_bg', $settings['theme_bg'] ?? '#070f1a') }}" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
                     </div>
                 </div>
                 <div>
                     <label for="theme_surface" class="form-label">Surface / Card Color</label>
                     <div class="flex items-center gap-3">
-                        <input type="color" id="theme_surface" name="theme_surface" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer" value="{{ old('theme_surface', $settings['theme_surface'] ?? '#0E1B1C') }}">
-                        <span class="text-text-muted text-xs">Default: #0E1B1C (Elevated Teal)</span>
+                        <input type="color" id="theme_surface_picker" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer color-picker" value="{{ old('theme_surface', $settings['theme_surface'] ?? '#0e1f34') }}">
+                        <input type="text" id="theme_surface" name="theme_surface" class="form-input font-mono uppercase text-sm color-text" value="{{ old('theme_surface', $settings['theme_surface'] ?? '#0e1f34') }}" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
                     </div>
                 </div>
                 <div>
                     <label for="theme_text" class="form-label">Primary Text Color</label>
                     <div class="flex items-center gap-3">
-                        <input type="color" id="theme_text" name="theme_text" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer" value="{{ old('theme_text', $settings['theme_text'] ?? '#F0F8F8') }}">
-                        <span class="text-text-muted text-xs">Default: #F0F8F8 (Off White)</span>
+                        <input type="color" id="theme_text_picker" class="h-10 w-20 bg-transparent border-0 p-0 rounded cursor-pointer color-picker" value="{{ old('theme_text', $settings['theme_text'] ?? '#f9f8e4') }}">
+                        <input type="text" id="theme_text" name="theme_text" class="form-input font-mono uppercase text-sm color-text" value="{{ old('theme_text', $settings['theme_text'] ?? '#f9f8e4') }}" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
                     </div>
                 </div>
             </div>
@@ -142,4 +142,35 @@
             </button>
         </form>
     </div>
+@endsection
+
+@section('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sync color pickers with hex text inputs
+        const pickers = document.querySelectorAll('.color-picker');
+        
+        pickers.forEach(picker => {
+            const textInput = picker.nextElementSibling;
+            
+            // When picker changes, update text
+            picker.addEventListener('input', function() {
+                textInput.value = this.value.toUpperCase();
+            });
+            
+            // When text changes, update picker (if valid hex)
+            textInput.addEventListener('input', function() {
+                const val = this.value.trim();
+                if (/^#([0-9A-F]{3}){1,2}$/i.test(val)) {
+                    // Convert 3-char hex to 6-char hex for the picker
+                    if (val.length === 4) {
+                        picker.value = '#' + val[1]+val[1] + val[2]+val[2] + val[3]+val[3];
+                    } else {
+                        picker.value = val;
+                    }
+                }
+            });
+        });
+    });
+</script>
 @endsection
