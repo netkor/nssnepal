@@ -21,7 +21,7 @@
                     <div class="absolute right-6 top-6 text-primary-light/10 text-6xl font-bold font-heading"><i class="fas fa-bullseye"></i></div>
                     <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Empowering Actions</span>
                     <h2 class="text-2xl md:text-3xl font-heading font-bold text-text-primary mb-4">Our Mission</h2>
-                    <p class="text-text-secondary text-md leading-relaxed">
+                    <p class="text-text-secondary text-md text-justify leading-relaxed">
                         To conduct scientific research in biodiversity conservation, facilitate nature literacy, and establish active conservation stewardship programs. We seek to protect ecosystems through scientific understanding and grass-roots public mobilization.
                     </p>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="absolute right-6 top-6 text-primary-light/10 text-6xl font-bold font-heading"><i class="fas fa-eye"></i></div>
                     <span class="text-accent-gold text-xs font-bold uppercase tracking-widest block mb-2">Inspiring Tomorrow</span>
                     <h2 class="text-2xl md:text-3xl font-heading font-bold text-text-primary mb-4">Our Vision</h2>
-                    <p class="text-text-secondary text-md leading-relaxed">
+                    <p class="text-text-secondary text-md text-justify leading-relaxed">
                         A harmonious coexistence between humans and nature in Nepal, where communities are active guardians of their local ecological resources, backed by evidence-based scientific research.
                     </p>
                 </div>
@@ -76,7 +76,7 @@
                             <i class="fas fa-paw"></i>
                         </div>
                         <h3 class="text-lg font-bold text-text-primary">Wildlife Ecology & Monitoring</h3>
-                        <p class="text-text-secondary text-sm">
+                        <p class="text-text-secondary text-justify text-sm">
                             We perform active field research, habitat suitability mapping, diet analysis, and conflict threat modeling on threatened carnivores and herbivores like Common Leopards, Striped Hyenas, and Himalayan Musk Deer.
                         </p>
                     </div>
@@ -87,7 +87,7 @@
                             <i class="fas fa-school"></i>
                         </div>
                         <h3 class="text-lg font-bold text-text-primary">Environmental Education</h3>
-                        <p class="text-text-secondary text-sm">
+                        <p class="text-text-secondary text-justify text-sm">
                             NSS designs nature education materials, conducts school awareness workshops, runs village-level group discussions, and hosts bird-watching activities to cultivate conservation literacy in children and adults.
                         </p>
                     </div>
@@ -98,7 +98,7 @@
                             <i class="fas fa-users-cog"></i>
                         </div>
                         <h3 class="text-lg font-bold text-text-primary">Community & Youth Empowerment</h3>
-                        <p class="text-text-secondary text-sm">
+                        <p class="text-text-secondary text-justify text-sm">
                             Through thesis grants, internships, and workshops, we mentor local youth and park rangers. We establish community stewardship structures to counter illegal poaching and habitat fragmentation.
                         </p>
                     </div>
