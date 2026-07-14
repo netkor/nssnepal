@@ -50,7 +50,96 @@
                 </div>
             </div>
 
-            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-file-alt text-secondary mr-2"></i> Page Content Settings</h3>
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-home text-secondary mr-2"></i> Homepage Settings</h3>
+            <div class="mb-8">
+                <label for="home_who_we_are" class="form-label">Homepage 'Who We Are' Section</label>
+                @php
+                    $defaultWho = '<p class="mb-4">NSS is a non-governmental organization based in Nepal. We are focused on research and conservation of biodiversity, environmental education, and building community-level conservation stewards.</p><p>We actively design awareness campaigns, monitor threatened wildlife populations (like common leopards, striped hyenas, and musk deer), and work closely with schools, buffer zone committees, and national parks.</p>';
+                    $currentWho = !empty($settings['home_who_we_are']) ? $settings['home_who_we_are'] : $defaultWho;
+                @endphp
+                <textarea id="home_who_we_are" name="home_who_we_are" class="form-input rich-editor">{{ old('home_who_we_are', $currentWho) }}</textarea>
+                <p class="text-text-muted text-xs mt-2">This is the introductory text displayed on the Homepage.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Focus Area 1 -->
+                <div class="glass p-4 rounded-xl border border-glass-border/30">
+                    <h4 class="text-text-primary font-semibold mb-4 border-b border-glass-border/20 pb-2">Focus Area 1</h4>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <label class="form-label">Icon (FontAwesome Class)</label>
+                            <input type="text" name="focus_1_icon" class="form-input" value="{{ old('focus_1_icon', $settings['focus_1_icon'] ?? 'fas fa-microscope') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Title</label>
+                            <input type="text" name="focus_1_title" class="form-input" value="{{ old('focus_1_title', $settings['focus_1_title'] ?? 'Scientific Research') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Description</label>
+                            <textarea name="focus_1_desc" class="form-input" rows="2">{{ old('focus_1_desc', $settings['focus_1_desc'] ?? 'Conducting rigorous wildlife monitoring, habitat evaluations, and conflict mitigation studies.') }}</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Focus Area 2 -->
+                <div class="glass p-4 rounded-xl border border-glass-border/30">
+                    <h4 class="text-text-primary font-semibold mb-4 border-b border-glass-border/20 pb-2">Focus Area 2</h4>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <label class="form-label">Icon (FontAwesome Class)</label>
+                            <input type="text" name="focus_2_icon" class="form-input" value="{{ old('focus_2_icon', $settings['focus_2_icon'] ?? 'fas fa-graduation-cap') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Title</label>
+                            <input type="text" name="focus_2_title" class="form-input" value="{{ old('focus_2_title', $settings['focus_2_title'] ?? 'Environmental Education') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Description</label>
+                            <textarea name="focus_2_desc" class="form-input" rows="2">{{ old('focus_2_desc', $settings['focus_2_desc'] ?? 'Empowering students, educators, and local groups with nature literacy and protection seminars.') }}</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Focus Area 3 -->
+                <div class="glass p-4 rounded-xl border border-glass-border/30">
+                    <h4 class="text-text-primary font-semibold mb-4 border-b border-glass-border/20 pb-2">Focus Area 3</h4>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <label class="form-label">Icon (FontAwesome Class)</label>
+                            <input type="text" name="focus_3_icon" class="form-input" value="{{ old('focus_3_icon', $settings['focus_3_icon'] ?? 'fas fa-hands-helping') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Title</label>
+                            <input type="text" name="focus_3_title" class="form-input" value="{{ old('focus_3_title', $settings['focus_3_title'] ?? 'Community Stewardship') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Description</label>
+                            <textarea name="focus_3_desc" class="form-input" rows="2">{{ old('focus_3_desc', $settings['focus_3_desc'] ?? 'Training game-scouts, local committees, and young researchers to govern conservation locally.') }}</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Focus Area 4 -->
+                <div class="glass p-4 rounded-xl border border-glass-border/30">
+                    <h4 class="text-text-primary font-semibold mb-4 border-b border-glass-border/20 pb-2">Focus Area 4</h4>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <label class="form-label">Icon (FontAwesome Class)</label>
+                            <input type="text" name="focus_4_icon" class="form-input" value="{{ old('focus_4_icon', $settings['focus_4_icon'] ?? 'fas fa-book-open') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Title</label>
+                            <input type="text" name="focus_4_title" class="form-input" value="{{ old('focus_4_title', $settings['focus_4_title'] ?? 'Publications') }}">
+                        </div>
+                        <div>
+                            <label class="form-label">Description</label>
+                            <textarea name="focus_4_desc" class="form-input" rows="2">{{ old('focus_4_desc', $settings['focus_4_desc'] ?? 'Sharing conservation data through international scientific publications and educational posters.') }}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-text-primary font-heading font-semibold text-lg mb-6 border-b border-glass-border/30 pb-2"><i class="fas fa-file-alt text-secondary mr-2"></i> Other Page Content</h3>
             <div class="mb-6">
                 <label for="about_us_content" class="form-label">About Us Page Content</label>
                 @php

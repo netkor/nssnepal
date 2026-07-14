@@ -73,12 +73,13 @@
                     <span class="text-primary-muted font-bold text-xs uppercase tracking-widest block mb-2">Who We Are</span>
                     <h2 class="section-title text-text-primary">Natural Science Society (NSS)</h2>
                     <div class="section-divider"></div>
-                    <p class="text-text-secondary text-md mb-6 text-justify leading-relaxed">
-                        NSS is a non-governmental organization based in Nepal. We are focused on research and conservation of biodiversity, environmental education, and building community-level conservation stewards.
-                    </p>
-                    <p class="text-text-secondary text-md mb-8 text-justify leading-relaxed">
-                        We actively design awareness campaigns, monitor threatened wildlife populations (like common leopards, striped hyenas, and musk deer), and work closely with schools, buffer zone committees, and national parks.
-                    </p>
+                    @php
+                        $defaultWho = '<p class="mb-4">NSS is a non-governmental organization based in Nepal. We are focused on research and conservation of biodiversity, environmental education, and building community-level conservation stewards.</p><p>We actively design awareness campaigns, monitor threatened wildlife populations (like common leopards, striped hyenas, and musk deer), and work closely with schools, buffer zone committees, and national parks.</p>';
+                        $whoWeAre = \App\Models\SiteSetting::get('home_who_we_are', $defaultWho);
+                    @endphp
+                    <div class="text-text-secondary text-md mb-8 text-justify leading-relaxed rich-text-content">
+                        {!! $whoWeAre !!}
+                    </div>
                     <div class="flex flex-wrap gap-4">
                         <a href="/about-us" class="btn-secondary">
                             Our Objectives
@@ -93,41 +94,41 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="glass-card group p-6 flex flex-col gap-4 animate-on-scroll delay-1 cursor-pointer">
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl group-hover:scale-110 group-hover:bg-primary-light/40 group-hover:rotate-6 transition-all duration-300">
-                            <i class="fas fa-microscope"></i>
+                            <i class="{{ \App\Models\SiteSetting::get('focus_1_icon', 'fas fa-microscope') }}"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">Scientific Research</h3>
+                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">{{ \App\Models\SiteSetting::get('focus_1_title', 'Scientific Research') }}</h3>
                         <p class="text-text-secondary text-sm group-hover:text-text-primary transition-colors duration-300">
-                            Conducting rigorous wildlife monitoring, habitat evaluations, and conflict mitigation studies.
+                            {{ \App\Models\SiteSetting::get('focus_1_desc', 'Conducting rigorous wildlife monitoring, habitat evaluations, and conflict mitigation studies.') }}
                         </p>
                     </div>
 
                     <div class="glass-card group p-6 flex flex-col gap-4 animate-on-scroll delay-2 cursor-pointer">
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl group-hover:scale-110 group-hover:bg-primary-light/40 group-hover:-rotate-6 transition-all duration-300">
-                            <i class="fas fa-graduation-cap"></i>
+                            <i class="{{ \App\Models\SiteSetting::get('focus_2_icon', 'fas fa-graduation-cap') }}"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">Environmental Education</h3>
+                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">{{ \App\Models\SiteSetting::get('focus_2_title', 'Environmental Education') }}</h3>
                         <p class="text-text-secondary text-sm group-hover:text-text-primary transition-colors duration-300">
-                            Empowering students, educators, and local groups with nature literacy and protection seminars.
+                            {{ \App\Models\SiteSetting::get('focus_2_desc', 'Empowering students, educators, and local groups with nature literacy and protection seminars.') }}
                         </p>
                     </div>
 
                     <div class="glass-card group p-6 flex flex-col gap-4 animate-on-scroll delay-3 cursor-pointer">
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl group-hover:scale-110 group-hover:bg-primary-light/40 group-hover:rotate-6 transition-all duration-300">
-                            <i class="fas fa-hands-helping"></i>
+                            <i class="{{ \App\Models\SiteSetting::get('focus_3_icon', 'fas fa-hands-helping') }}"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">Community Stewardship</h3>
+                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">{{ \App\Models\SiteSetting::get('focus_3_title', 'Community Stewardship') }}</h3>
                         <p class="text-text-secondary text-sm group-hover:text-text-primary transition-colors duration-300">
-                            Training game-scouts, local committees, and young researchers to govern conservation locally.
+                            {{ \App\Models\SiteSetting::get('focus_3_desc', 'Training game-scouts, local committees, and young researchers to govern conservation locally.') }}
                         </p>
                     </div>
 
                     <div class="glass-card group p-6 flex flex-col gap-4 animate-on-scroll delay-4 cursor-pointer">
                         <div class="w-12 h-12 rounded-lg bg-primary-light/20 flex items-center justify-center text-secondary text-xl group-hover:scale-110 group-hover:bg-primary-light/40 group-hover:-rotate-6 transition-all duration-300">
-                            <i class="fas fa-book-open"></i>
+                            <i class="{{ \App\Models\SiteSetting::get('focus_4_icon', 'fas fa-book-open') }}"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">Publications</h3>
+                        <h3 class="text-lg font-bold text-text-primary group-hover:text-primary transition-colors duration-300">{{ \App\Models\SiteSetting::get('focus_4_title', 'Publications') }}</h3>
                         <p class="text-text-secondary text-sm group-hover:text-text-primary transition-colors duration-300">
-                            Sharing conservation data through international scientific publications and educational posters.
+                            {{ \App\Models\SiteSetting::get('focus_4_desc', 'Sharing conservation data through international scientific publications and educational posters.') }}
                         </p>
                     </div>
                 </div>
